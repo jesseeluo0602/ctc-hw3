@@ -1,0 +1,46 @@
+1)
+
+CREATE TABLE students
+(
+id int,
+name varchar(255),
+birthday varchar(255),
+GPA varchar(255),
+grad int,
+);
+
+2)
+INSERT INTO students
+VALUES (Anderson, 1987­10­22, 3.9, 2014),(Jones, 1990­4­16, 2.4, 2016
+),(Hernandez, 1989­8­12, 3.1, 2015),(Chen, 1990­2­4, 3.2, 2015);
+
+3)
+DELETE FROM students
+WHERE name=Anderson;
+
+4)
+SELECT *
+FROM students;
+
+5)
+SELECT name, GPA
+FROM students;
+
+6)
+SELECT name, GPA
+FROM studnts
+WHERE GPA > 3.0;
+
+7)
+SELECT name, GPA
+FROM students
+WHERE GPA > 3.0
+ORDER BY GPA DESC; 
+
+8)
+UPDATE students;
+SET GPA=2.6
+WHERE name='Jones';
+
+9)
+DELETE * FROM students;
